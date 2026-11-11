@@ -1,0 +1,337 @@
+/* Lit Ship / Retro Pop. Dedicated theme; shared AI snapshot is unchanged. */
+@font-face{font-family:'Lit Dela';src:url('./fonts/dela-gothic-one.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
+.ls-rank.theme-retro{--paper:#fff9e9;--ink:#1e2a3a;--muted:#4e5864;--line:#cfc7b5;--accent:#1e2a3a;--bright:#f3b72f;--soft:#faedd0;--night:#1e2a3a;--coral:#f96c5d;--display:'Lit Dela','Hiragino Kaku Gothic ProN',sans-serif;background:var(--paper);color:var(--ink)}
+.ls-rank.theme-retro :is(h1,h2,.growth-heading h2,.rank-card .ai-mission-main h3){font-family:var(--display);font-weight:400;letter-spacing:-.025em}
+.ls-rank.theme-retro .header{background:#fff9e9;border-bottom:3px solid var(--ink)}
+.ls-rank.theme-retro .logo{letter-spacing:-.045em;font-weight:900}
+.ls-rank.theme-retro .logo span{color:var(--ink);border-left:2px solid var(--ink);padding-left:14px}
+.ls-rank.theme-retro nav{gap:10px}
+.ls-rank.theme-retro nav a{padding:7px 13px;border:2px solid transparent;border-radius:0}
+.ls-rank.theme-retro nav a:hover,.ls-rank.theme-retro nav [aria-current=page]{border-color:var(--ink);background:var(--bright);color:var(--ink);text-decoration:none}
+.ls-rank.theme-retro .hero{background:#fff9e9;padding:72px 0 64px;border-bottom:0;overflow:hidden}
+.ls-rank.theme-retro .hero>.wrap{position:relative;z-index:1}
+.ls-rank.theme-retro .hero:after{content:'';position:absolute;inset:0 0 0 65%;z-index:-1;opacity:.35;background-image:radial-gradient(#e7bb56 1px,transparent 1px);background-size:12px 12px;mask-image:linear-gradient(to right,transparent,#000)}
+.ls-rank.theme-retro .hero h1{font-size:clamp(30px,4.3vw,54px);line-height:1.65;max-width:1060px;position:relative}
+.ls-rank.theme-retro .hero .eyebrow{display:inline-block;background:var(--bright);border:2px solid var(--ink);color:var(--ink);padding:5px 13px;box-shadow:3px 3px 0 var(--ink);transform:rotate(-2deg);margin-bottom:28px;letter-spacing:.09em}
+.ls-rank.theme-retro .hero .lead{color:var(--ink);font-size:16px;line-height:2}
+.ls-rank.theme-retro .hero .actions{margin-top:30px;gap:23px}
+.ls-rank.theme-retro .btn,.ls-rank.theme-retro .rank-transition .hint-cta{border:2px solid var(--ink);border-radius:0;box-shadow:4px 4px 0 var(--ink);background:white;color:var(--ink);padding:13px 21px;min-height:48px;font-weight:800;transition:transform .15s,box-shadow .15s;line-height:1.7}
+.ls-rank.theme-retro .btn.primary{background:var(--coral);color:var(--ink);border-color:var(--ink)}
+.ls-rank.theme-retro .btn:hover,.ls-rank.theme-retro .rank-transition .hint-cta:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink);text-decoration:none}
+.ls-rank.theme-retro .btn:active,.ls-rank.theme-retro .hint-cta:active{transform:translate(4px,4px);box-shadow:none}
+.ls-rank.theme-retro :is(a,button,summary,input):focus-visible{outline:3px dashed #7d311b;outline-offset:6px}
+.ls-rank.theme-retro .text-link{color:var(--ink);font-weight:750;text-decoration-thickness:2px;text-underline-offset:6px}
+.ls-rank.theme-retro .learner-intro{color:var(--muted);font-size:14px;padding-bottom:35px}
+.ls-rank.theme-retro #ranks{background:#f5eacb;border-top:3px solid var(--ink);padding:64px 0 80px}
+.ls-rank.theme-retro .growth-heading{border:0;gap:45px;margin-bottom:18px;align-items:center;padding-top:0}
+.ls-rank.theme-retro .growth-heading .eyebrow{color:var(--ink);font-size:11px;letter-spacing:.12em}
+.ls-rank.theme-retro .growth-heading h2{color:var(--ink);font-size:clamp(27px,3vw,38px);line-height:1.7}
+.ls-rank.theme-retro .growth-heading>p{color:#4e5864;font-size:14px}
+.ls-rank.theme-retro .rank-journey{padding-right:8px}
+.ls-rank.theme-retro .rank-journey>.rank-card{border:3px solid var(--ink);border-radius:0;box-shadow:7px 7px 0 var(--ink);background:#fffefa;padding:36px;grid-template-columns:96px minmax(0,1fr) minmax(260px,.95fr);gap:30px;overflow:visible}
+.ls-rank.theme-retro .rank-card .ai-mission-number{background:var(--bright);border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);padding:12px 10px;transform:rotate(-3deg);text-align:center}
+.ls-rank.theme-retro .rank-card .ai-mission-number>span{font-size:10px;letter-spacing:.12em;color:var(--ink);margin:0 0 7px}
+.ls-rank.theme-retro .rank-card .ai-mission-number strong{font-family:var(--display);font-size:49px;font-weight:400;line-height:1.2;letter-spacing:-.04em;color:var(--ink)}
+.ls-rank.theme-retro .rank-name{font-size:10px;font-weight:800;color:#505761;margin:0 0 12px}
+.ls-rank.theme-retro .rank-card .ai-mission-main h3{font-size:26px;line-height:1.65;color:var(--ink);margin-bottom:14px}
+.ls-rank.theme-retro .rank-card [data-rank-description]{color:#424b56;font-size:14px}
+.ls-rank.theme-retro .rank-card-aside{border-left:2px dashed #b8ad94;padding-left:25px}
+.ls-rank.theme-retro .opportunity-kicker{font-size:11px;color:var(--ink);font-weight:850;background:var(--bright);padding:2px 9px;display:table;margin-bottom:14px}
+.ls-rank.theme-retro .opportunity-description,.ls-rank.theme-retro .opportunity-lines p{color:var(--ink);font-size:14px;line-height:2}
+.ls-rank.theme-retro .opportunity-lines p{border-color:#cfc7b5}
+.ls-rank.theme-retro .opportunity-symbol{color:var(--ink)}
+.ls-rank.theme-retro .rank-start-note{color:#4e5864}
+.ls-rank.theme-retro .rank-journey>.rank-card-3{background:#fffefa}
+.ls-rank.theme-retro .rank-card-3 .ai-mission-number{background:var(--bright);transform:rotate(-3deg)}
+.ls-rank.theme-retro .rank-journey>.rank-card-5{background:#f3b72f}
+.ls-rank.theme-retro .rank-card-5 .ai-mission-number{background:white}
+.ls-rank.theme-retro .rank-card-5 .opportunity-kicker{background:var(--ink);color:#fff9e9}
+.ls-rank.theme-retro .rank-reward{border-top:2px dashed var(--ink);padding-top:18px}
+.ls-rank.theme-retro .reward-kicker,.ls-rank.theme-retro .reward-meaning{color:var(--ink)}
+.ls-rank.theme-retro .reward-amount{color:var(--ink)}
+.ls-rank.theme-retro .reward-amount strong{font-family:var(--display);font-size:38px;line-height:1.4}
+.ls-rank.theme-retro .reward-terms{background:#fff9e9;border:2px solid var(--ink);color:var(--ink);padding:9px 12px}
+.ls-rank.theme-retro .rank-transition{padding:38px 30px 32px;grid-template-columns:102px minmax(0,1fr);gap:30px}
+.ls-rank.theme-retro .transition-route{color:var(--ink);font-family:inherit;font-weight:850;font-size:12px}
+.ls-rank.theme-retro .transition-route:after{width:2px;background:var(--ink);height:40px;margin-left:25px}
+.ls-rank.theme-retro .rank-transition h3{font-size:12px;color:var(--ink);font-weight:850;margin-bottom:10px}
+.ls-rank.theme-retro .rank-transition p{color:#424b56;font-size:14px;line-height:2}
+.ls-rank.theme-retro .rank-transition .hint-cta{font-size:12px;margin-top:17px;min-height:46px;padding:10px 15px;gap:18px}
+.ls-rank.theme-retro .hints-hero h1{font-size:clamp(32px,4vw,54px);margin-bottom:20px}
+.ls-rank.theme-retro .hints-hero .rank-opportunity{background:white;border:2px solid var(--ink);box-shadow:5px 5px 0 var(--ink);padding:23px 26px;margin:24px 6px 0 0;max-width:780px}
+.ls-rank.theme-retro .hints-hero .rank-reward{max-width:440px}
+.ls-rank.theme-retro .breadcrumb{padding-top:20px;font-size:12px}
+.ls-rank.theme-retro .section{border-top-color:#d6cbb2}
+.ls-rank.theme-retro .section.alt{background:#faedd0}
+.ls-rank.theme-retro .section>.wrap>h2{font-size:clamp(24px,3vw,34px);margin-bottom:28px;line-height:1.7}
+.ls-rank.theme-retro :is(.practice-mission,.artifact-preview,.example-story,.learning-help,.role-model-example){background:#fffefa;border:2px solid var(--ink);border-radius:0;box-shadow:5px 5px 0 var(--ink)}
+.ls-rank.theme-retro .practice-mission{border-left-width:7px;padding:28px 30px;margin:24px 6px 36px 0;background:#f8d9cf}
+.ls-rank.theme-retro .practice-mission h2{font-family:inherit;font-size:22px;font-weight:850;line-height:1.6}
+.ls-rank.theme-retro .mission-steps li{grid-template-columns:37px 1fr;border-top:2px dashed #cfc7b5;gap:20px;padding:27px 0}
+.ls-rank.theme-retro .mission-steps li>span{background:var(--bright);color:var(--ink);width:35px;height:35px;display:grid;place-items:center;border:2px solid var(--ink);box-shadow:2px 2px 0 var(--ink);line-height:1;font-size:12px}
+.ls-rank.theme-retro .mission-steps h3{font-size:18px;line-height:1.7}
+.ls-rank.theme-retro .mission-steps p{font-size:15px;line-height:2;color:#424b56}
+.ls-rank.theme-retro .learning-help{margin:18px 6px 20px 0}
+.ls-rank.theme-retro .learning-help>summary{font-size:14px;line-height:1.8}
+.ls-rank.theme-retro .learning-help[open]{background:white}
+.ls-rank.theme-retro .artifact-preview{margin-right:6px}
+.ls-rank.theme-retro .artifact-preview h3{font-size:21px}
+.ls-rank.theme-retro .artifact-preview pre{background:#fff3cc;border:1px dashed #b5a783;border-radius:0}
+.ls-rank.theme-retro .example-switch[aria-pressed=true]{background:var(--ink);color:#fff9e9}
+.ls-rank.theme-retro .compass-source-note{background:#fff0b9;border:2px solid var(--ink);box-shadow:5px 5px 0 var(--ink);margin-right:6px}
+.ls-rank.theme-retro .footer{background:var(--ink);color:#fff9e9;border-top:3px solid var(--ink)}
+.ls-rank.theme-retro .footer :is(a,strong,span){color:#fff9e9}
+.ls-rank.theme-retro .footer-bottom{border-color:#ffffff40}
+/* Preserve the original LinkedIn material's structure; harmonize its visual skin. */
+.ls-rank.theme-retro #litship-linkedin-onboarding{--li:#1e2a3a;--li2:#1e2a3a;--blue:#faedd0;--ink:#1e2a3a;--muted:#4e5864;--line:#cfc7b5;--bg:#fff9e9;--yellow:#f3b72f}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.hero,.page-intro,.card,.onboarding-map,.publish-panel){background:#fffefa;color:var(--ink);border:2px solid var(--ink);border-radius:0;box-shadow:5px 5px 0 var(--ink)}
+.ls-rank.theme-retro #litship-linkedin-onboarding .hero{background:#f3b72f;overflow:visible}
+.ls-rank.theme-retro #litship-linkedin-onboarding .hero :is(h2,.hero-line,.hero-label,p,.hero-eye){color:#1e2a3a;text-shadow:none}
+.ls-rank.theme-retro #litship-linkedin-onboarding .hero h2{font-family:var(--display);font-weight:400}
+.ls-rank.theme-retro #litship-linkedin-onboarding .hero-pill{color:var(--ink);background:#fff9e9;border:2px solid var(--ink)}
+.ls-rank.theme-retro #litship-linkedin-onboarding .map-goal-badge{background:#f3b72f;color:var(--ink);border:2px solid var(--ink);border-radius:0}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.btn,.gem-open,.publish-button){background:#1e2a3a;color:white;border:2px solid var(--ink);border-radius:0;box-shadow:3px 3px 0 #f3b72f}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.publish-button,.btn-primary){background:#f3b72f;color:var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.ls-rank.theme-retro #litship-linkedin-onboarding .publish-complete{background:#fff0b9;border:2px solid var(--ink);border-radius:0}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.publish-eyebrow,.publish-actions li:before){color:var(--ink)}
+.ls-rank.theme-retro #litship-linkedin-onboarding .wrap{padding-right:8px}
+@media(max-width:1000px){.ls-rank.theme-retro .rank-journey>.rank-card{grid-template-columns:76px minmax(0,1fr) minmax(220px,.95fr);gap:22px;padding:28px}.ls-rank.theme-retro .rank-card .ai-mission-number strong{font-size:39px}.ls-rank.theme-retro .rank-card .ai-mission-main h3{font-size:22px}}
+@media(max-width:760px){
+.ls-rank.theme-retro .header-inner{gap:10px}.ls-rank.theme-retro nav{gap:3px}.ls-rank.theme-retro nav a{padding:5px 8px;font-size:11px}.ls-rank.theme-retro .logo span{font-size:8px;padding-left:8px;margin-left:8px}
+.ls-rank.theme-retro .hero{padding:43px 0 42px}.ls-rank.theme-retro .hero h1{font-size:clamp(26px,6.6vw,38px);line-height:1.75;letter-spacing:-.045em}.ls-rank.theme-retro .hero .eyebrow{font-size:10px;margin-bottom:25px}.ls-rank.theme-retro .hero .lead{font-size:14px}.ls-rank.theme-retro .hero .actions{gap:19px}.ls-rank.theme-retro .btn{font-size:12px;padding:12px 17px}
+.ls-rank.theme-retro #ranks{padding:40px 0 50px}.ls-rank.theme-retro .growth-heading{gap:18px;margin-bottom:6px}.ls-rank.theme-retro .growth-heading h2{font-size:26px;line-height:1.8}.ls-rank.theme-retro .growth-heading>p{font-size:13px}.ls-rank.theme-retro .rank-journey{padding-right:6px}
+.ls-rank.theme-retro .rank-journey>.rank-card{grid-template-columns:64px minmax(0,1fr);gap:22px 17px;padding:25px 19px;border-width:2px;box-shadow:5px 5px 0 var(--ink)}
+.ls-rank.theme-retro .rank-card .ai-mission-number{padding:9px 5px;box-shadow:2px 2px 0 var(--ink)}.ls-rank.theme-retro .rank-card .ai-mission-number strong{font-size:32px}.ls-rank.theme-retro .rank-card .ai-mission-main h3{font-size:21px;line-height:1.7}.ls-rank.theme-retro .rank-card [data-rank-description]{font-size:13px}.ls-rank.theme-retro .rank-card-aside{border-left:0;border-top:2px dashed #b8ad94;padding:20px 0 0;grid-column:1/-1}.ls-rank.theme-retro .opportunity-description,.ls-rank.theme-retro .opportunity-lines p{font-size:13px}
+.ls-rank.theme-retro .rank-transition{grid-template-columns:40px minmax(0,1fr);gap:14px;padding:30px 5px}.ls-rank.theme-retro .transition-route{font-size:9px}.ls-rank.theme-retro .transition-route:after{margin-left:14px;height:45px}.ls-rank.theme-retro .rank-transition h3{font-size:11px}.ls-rank.theme-retro .rank-transition p{font-size:13px;line-height:1.95}.ls-rank.theme-retro .rank-transition .hint-cta{font-size:11px;padding:10px 12px;gap:12px;max-width:100%}
+.ls-rank.theme-retro .hints-hero h1{font-size:33px}.ls-rank.theme-retro .hints-hero .rank-opportunity{padding:19px}.ls-rank.theme-retro .practice-mission{padding:22px}.ls-rank.theme-retro .practice-mission h2{font-size:20px}.ls-rank.theme-retro .mission-steps li{grid-template-columns:30px 1fr;gap:16px;padding:24px 0}.ls-rank.theme-retro .mission-steps li>span{width:29px;height:29px;font-size:11px}.ls-rank.theme-retro .mission-steps h3{font-size:17px}.ls-rank.theme-retro .mission-steps p{font-size:14px}.ls-rank.theme-retro .reward-amount strong{font-size:32px}
+.ls-rank.theme-retro .section>.wrap>h2{font-size:25px}.ls-rank.theme-retro .artifact-preview{padding:22px}.ls-rank.theme-retro .artifact-preview h3{font-size:19px}.ls-rank.theme-retro .learning-help{padding:17px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .hero h2{font-size:26px;line-height:1.65}.ls-rank.theme-retro #litship-linkedin-onboarding .page-intro{padding:22px}
+}
+@media(prefers-reduced-motion:reduce){.ls-rank.theme-retro .btn,.ls-rank.theme-retro .rank-transition .hint-cta{transition:none}}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.card,.step,.download-grid>*){min-width:0}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.phone-shot,.instruction-shot){display:block;max-width:min(300px,100%);height:auto}
+@media(max-width:760px){.ls-rank.theme-retro #litship-linkedin-onboarding .download-grid{grid-template-columns:minmax(0,1fr)}}
+.ls-rank.theme-retro #litship-linkedin-onboarding .hero:after{display:none}
+
+/* Complete the imported LinkedIn material's theme, scoped to this lesson only. */
+.ls-rank.theme-retro #litship-linkedin-onboarding{padding:0;background:transparent;border-radius:0;font-size:15px;line-height:1.9;--green:#1e2a3a;--orange:#f3b72f;--red:#9c3329}
+.ls-rank.theme-retro #litship-linkedin-onboarding .wrap{width:100%;max-width:none;padding:0 7px 0 0}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(h2,h3,h4){color:#1e2a3a;line-height:1.7;letter-spacing:-.02em}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.section-head h2,.intro-main h2,.cta h3){font-family:var(--display);font-weight:400;font-size:clamp(22px,2.5vw,29px)}
+.ls-rank.theme-retro #litship-linkedin-onboarding .section{padding:24px 0;margin-bottom:30px;border:0}
+.ls-rank.theme-retro #litship-linkedin-onboarding .section-head{margin-bottom:24px;text-align:left}
+.ls-rank.theme-retro #litship-linkedin-onboarding .section-head p{font-size:14px;line-height:1.9;color:#4e5864;margin-top:12px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .hero{padding:44px 28px;margin-bottom:28px;position:relative}
+.ls-rank.theme-retro #litship-linkedin-onboarding .hero h2{gap:10px;line-height:1.6}
+.ls-rank.theme-retro #litship-linkedin-onboarding .hero :is(.hero-label,.hero-line){font-family:var(--display);font-weight:400;line-height:1.6;text-shadow:none;letter-spacing:-.02em}
+.ls-rank.theme-retro #litship-linkedin-onboarding .hero-label{font-size:clamp(15px,2vw,22px)}
+.ls-rank.theme-retro #litship-linkedin-onboarding .hero-line{font-size:clamp(26px,3.7vw,43px)}
+.ls-rank.theme-retro #litship-linkedin-onboarding .hero p{font-size:15px;line-height:1.9;opacity:1}
+.ls-rank.theme-retro #litship-linkedin-onboarding .hero-pill{border-radius:0;font-size:13px;line-height:1.8}
+.ls-rank.theme-retro #litship-linkedin-onboarding .page-intro{padding:30px;margin-bottom:32px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .intro-main p{font-size:15px;line-height:1.9}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.intro-label,.map-kicker,.badge,.reality-tag){background:#f3b72f;color:#1e2a3a;border:2px solid #1e2a3a;border-radius:0;font-size:11px;font-weight:800;padding:5px 9px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .onboarding-map{padding:26px 0 0;margin-top:26px;background:transparent;border:0;border-top:2px dashed #b6ac96;box-shadow:none}
+.ls-rank.theme-retro #litship-linkedin-onboarding .onboarding-map-head{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:24px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .onboarding-map-head h3{font-size:22px;margin:16px 0 12px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .onboarding-map-head p{font-size:14px;line-height:1.9}
+.ls-rank.theme-retro #litship-linkedin-onboarding .map-goal-badge{min-width:0;padding:16px;align-self:start}
+.ls-rank.theme-retro #litship-linkedin-onboarding .map-goal-badge span{font-size:11px;color:#1e2a3a}
+.ls-rank.theme-retro #litship-linkedin-onboarding .map-goal-badge strong{font-size:14px;line-height:1.9}
+.ls-rank.theme-retro #litship-linkedin-onboarding .map-steps{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:24px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .map-arrow{display:none}
+.ls-rank.theme-retro #litship-linkedin-onboarding .map-step{border:2px solid #1e2a3a;border-radius:0;background:#fff9e9;padding:19px;box-shadow:3px 3px 0 #1e2a3a}
+.ls-rank.theme-retro #litship-linkedin-onboarding .map-step-goal{background:#fbd8cf}
+.ls-rank.theme-retro #litship-linkedin-onboarding .map-num{font-family:var(--display);font-size:24px;font-weight:400;color:#1e2a3a}
+.ls-rank.theme-retro #litship-linkedin-onboarding .map-icon{font-size:22px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .map-step strong{font-size:15px;line-height:1.8;margin-bottom:10px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .map-step span{font-size:13px;line-height:1.9}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.map-complete,.map-bonus){border:2px solid #1e2a3a;border-radius:0;background:#fff0b9;color:#1e2a3a;font-size:13px;line-height:1.9;padding:15px;margin-top:18px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .map-complete strong{display:block;color:#1e2a3a;margin-bottom:5px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .map-bonus a{text-decoration:underline;text-underline-offset:3px;font-weight:800}
+.ls-rank.theme-retro #litship-linkedin-onboarding .toc{padding:24px;margin-bottom:32px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .toc-title{font-size:19px;font-weight:800}
+.ls-rank.theme-retro #litship-linkedin-onboarding .toc-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .toc-grid a{font-size:13px;min-height:50px;padding:12px;border:2px solid #1e2a3a;border-radius:0;background:#fff9e9}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.toc-num,.step-num,.instruction-num,.company-howto-step>span,.first-post-item>span){color:#1e2a3a;background:#f3b72f;border:2px solid #1e2a3a;border-radius:0;flex:none;display:grid;place-items:center;font-size:12px;font-weight:800;width:30px;height:30px}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.linkedin-definition,.global-standard,.japan-opportunity,.reality-shell,.litship-role,.winwin-compact-card,.network-goal,.result-card,.advisor,.advisor-transition,.gem,.company-howto,.first-post-item,.first-post-gem,.first-post-reference,.posting-continuation,.review-criteria,.criteria-item,.review-step,.after-dm,.okite,.ok-example){background:#fffefa;background-image:none;border:2px solid #1e2a3a;border-radius:0;box-shadow:none;color:#1e2a3a}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.why-simple-intro,.gem,.company-howto){box-shadow:4px 4px 0 #1e2a3a}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.japan-opportunity-message,.results-message,.rarity,.options,.note,.company-howto-check,.gem-q,.gem-in,.first-post-reference,.after-dm,.network-goal){background:#fff0b9;background-image:none;border:1px solid #bfb295;border-radius:0;color:#1e2a3a}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.global-stat,.audience-card,.achievement,.company-howto-step,.first-post-prompt,.reward,.reward-item,.cond){background:#fff9e9;border:1px solid #c8bea9;border-radius:0;color:#1e2a3a}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.global-stat strong,.linkedin-definition strong,.network-goal span,.network-goal p,.japan-opportunity-message strong,.japan-opportunity-message p,.after-dm strong,.after-dm span,.reference-copy>span,.reference-copy p){color:#1e2a3a}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.why-simple-intro,.japan-opportunity,.reality-shell,.advisor,.company-howto,.first-post-card,.review-shell){padding:26px}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.why-simple-intro h3,.global-standard h3,.japan-opportunity h3,.litship-reason-top h3,.seniors-inside-head h3,.advisor h3,.gem h3,.profile-card h3,.first-post-head h3,.review-title h3,.reward h3){font-size:19px;line-height:1.7;color:#1e2a3a}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.intro-label,.why-label,.results-label,.global-kicker,.first-post-label,.gem-step,.challenge-label){font-size:11px;color:#1e2a3a;opacity:1}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.why-simple-intro p,.japan-opportunity p,.litship-reason-top p,.global-stat span,.audience-card span,.results-head p,.seniors-inside-head p,.result-card span,.advisor .role,.advisor-transition,.rarity,.signup p,.download-card p,.options,.note,.gem-q,.gem-in,.instruction-body p,.company-howto-head p,.first-post-head p,.first-post-gem p,.reference-copy p,.posting-continuation span,.review-title p,.criteria-note,.review-step span,.after-dm span,.pb-item span,.cond span,.ng-list li,.rule p,.sanction,.cta small){font-size:14px;line-height:1.9;opacity:1}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.audience-card strong,.result-card strong,.gem-open,.instruction-body strong,.company-howto-step strong,.first-post-item strong,.first-post-gem strong,.reference-copy strong,.posting-continuation strong,.review-step strong,.pb-item strong,.cond strong,.rule h3){font-size:15px;line-height:1.8}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.company-howto-step small,.first-post-item small,.criteria-item small,.prompt-copy,.reward-item){font-size:13px;line-height:1.9}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.map-steps,.toc-grid,.download-grid,.gem-grid,.global-stats,.audience-grid,.results-grid,.member-grid,.company-howto-steps,.first-post-contents,.criteria-grid,.review-flow,.pb-body,.reward-list){gap:18px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .gem{padding:22px;gap:13px;min-width:0}
+.ls-rank.theme-retro #litship-linkedin-onboarding .gem-step{font-weight:800}
+.ls-rank.theme-retro #litship-linkedin-onboarding .profile-card{padding:26px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .instruction{gap:14px;padding:20px 0;align-items:flex-start}
+.ls-rank.theme-retro #litship-linkedin-onboarding .instruction-body{min-width:0}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.btn,.gem-open,.first-post-reference>a,.member a,.reality-takeaway a){display:inline-flex;align-items:center;justify-content:center;gap:10px;border:2px solid #1e2a3a;border-radius:0;background:#f3b72f;color:#1e2a3a;font-size:13px;line-height:1.8;min-height:46px;padding:11px 16px;box-shadow:3px 3px 0 #1e2a3a;text-align:center;max-width:100%;overflow-wrap:anywhere;white-space:normal}
+.ls-rank.theme-retro #litship-linkedin-onboarding .gem-open{display:flex;margin-top:auto}
+.ls-rank.theme-retro #litship-linkedin-onboarding .btn:hover,.ls-rank.theme-retro #litship-linkedin-onboarding .gem-open:hover{transform:translate(1px,1px);box-shadow:2px 2px 0 #1e2a3a;text-decoration:none}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.signup,.challenge,.cta){background:#f3b72f;background-image:none;color:#1e2a3a;border:2px solid #1e2a3a;border-radius:0;box-shadow:5px 5px 0 #1e2a3a;padding:26px}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.signup h3,.signup p,.challenge h2,.challenge>p,.cta h3,.cta p,.cta small){color:#1e2a3a;opacity:1}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.co-banner,.pb-head,.okite-head){background:#1e2a3a;background-image:none;color:#fff9e9;border-radius:0}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.co-banner h2,.co-banner span,.pb-head h2,.pb-head p,.okite-head h2,.okite-head p){color:#fff9e9}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.pb-head h2,.okite-head h2){font-size:21px;font-family:var(--display);font-weight:400;line-height:1.8}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.pb-head p,.okite-head p){font-size:13px;line-height:1.9;opacity:1}
+.ls-rank.theme-retro #litship-linkedin-onboarding .pb-body{padding:24px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .pb-sec h3{font-size:12px;color:#4e5864;letter-spacing:.04em;margin-bottom:18px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .criteria-head{flex-wrap:wrap;margin-bottom:16px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .criteria-head :is(span,strong){font-size:13px;line-height:1.8}
+.ls-rank.theme-retro #litship-linkedin-onboarding .criteria-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .criteria-item{padding:14px;gap:10px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .criteria-item strong{font-size:14px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .criteria-check{background:#f3b72f;color:#1e2a3a;border:1px solid #1e2a3a;border-radius:0;font-size:12px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .review-flow{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:24px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .review-arrow{display:none}
+.ls-rank.theme-retro #litship-linkedin-onboarding .review-step{padding:20px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .review-step-goal{background:#fbd8cf}
+.ls-rank.theme-retro #litship-linkedin-onboarding .review-step-goal b{background:#1e2a3a;color:#fff9e9;border-radius:0;padding:6px 9px;font-size:12px;line-height:1.8}
+.ls-rank.theme-retro #litship-linkedin-onboarding .review-step-cta{margin:20px 0 5px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .after-dm{padding:20px;margin-top:24px;gap:14px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .after-dm strong{font-size:16px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .after-dm .btn{margin-top:17px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .publish-panel{padding:34px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .publish-panel h3{font-family:var(--display);font-weight:400;font-size:clamp(25px,3vw,36px);line-height:1.7}
+.ls-rank.theme-retro #litship-linkedin-onboarding .publish-button{font-size:15px;min-height:50px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .footer{background:transparent;border:0;box-shadow:none;color:#4e5864;font-size:12px;padding:24px 0}
+@media(max-width:1000px){.ls-rank.theme-retro #litship-linkedin-onboarding .map-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.ls-rank.theme-retro #litship-linkedin-onboarding .toc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){
+.ls-rank.theme-retro #litship-linkedin-onboarding .hero{padding:30px 18px}.ls-rank.theme-retro #litship-linkedin-onboarding .hero-label{font-size:15px}.ls-rank.theme-retro #litship-linkedin-onboarding .hero-line{font-size:26px}.ls-rank.theme-retro #litship-linkedin-onboarding .hero p{font-size:14px}.ls-rank.theme-retro #litship-linkedin-onboarding .hero-pill{font-size:12px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .page-intro{padding:22px}.ls-rank.theme-retro #litship-linkedin-onboarding .onboarding-map-head{grid-template-columns:minmax(0,1fr);gap:18px}.ls-rank.theme-retro #litship-linkedin-onboarding .onboarding-map-head h3{font-size:20px}.ls-rank.theme-retro #litship-linkedin-onboarding .map-steps{grid-template-columns:minmax(0,1fr)}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.toc-grid,.global-stats,.audience-grid,.results-grid,.member-grid,.download-grid,.gem-grid,.company-howto-steps,.first-post-contents,.criteria-grid,.review-flow,.pb-body,.reward-list,.reality-layout,.achievement-grid){grid-template-columns:minmax(0,1fr)}
+.ls-rank.theme-retro #litship-linkedin-onboarding .section{padding:16px 0;margin-bottom:26px}.ls-rank.theme-retro #litship-linkedin-onboarding .section-head h2{font-size:22px}.ls-rank.theme-retro #litship-linkedin-onboarding :is(.why-simple-intro,.japan-opportunity,.reality-shell,.advisor,.company-howto,.first-post-card,.review-shell,.profile-card,.signup,.challenge,.cta,.publish-panel){padding:20px}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.advisor,.first-post-gem,.first-post-reference,.review-title,.first-post-head){flex-direction:column;align-items:stretch}.ls-rank.theme-retro #litship-linkedin-onboarding .winwin-compact{grid-template-columns:minmax(0,1fr)}
+.ls-rank.theme-retro #litship-linkedin-onboarding .signup{align-items:flex-start}.ls-rank.theme-retro #litship-linkedin-onboarding .linkedin-definition{align-items:flex-start;gap:10px;padding:12px}.ls-rank.theme-retro #litship-linkedin-onboarding .linkedin-definition span{font-size:13px}.ls-rank.theme-retro #litship-linkedin-onboarding .criteria-item{padding:12px}.ls-rank.theme-retro #litship-linkedin-onboarding .review-step{padding:16px}.ls-rank.theme-retro #litship-linkedin-onboarding .toc{padding:19px}.ls-rank.theme-retro #litship-linkedin-onboarding .publish-panel h3{font-size:25px}
+}
+.ls-rank.theme-retro #litship-linkedin-onboarding .why-simple-intro{border:2px solid #1e2a3a;border-radius:0;background:#fffefa}
+.ls-rank.theme-retro #litship-linkedin-onboarding .reality-takeaway{background:#1e2a3a;border:2px solid #1e2a3a;border-radius:0;color:#fff9e9}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.reality-takeaway strong,.reality-takeaway p){color:#fff9e9;font-size:14px;line-height:1.9;opacity:1}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.definition-icon,.company-howto-icon,.first-post-icon,.pb-ico){border:2px solid #1e2a3a;border-radius:0;background:#f3b72f;color:#1e2a3a}
+.ls-rank.theme-retro #litship-linkedin-onboarding .co-logo{border-radius:0}
+.ls-rank.theme-retro #litship-linkedin-onboarding .sanction{border-radius:0;background:#fbd8cf;color:#70251f}
+
+/* First-post photo and mention tips: guidance, not additional rank criteria. */
+.ls-rank.theme-retro #litship-linkedin-onboarding .first-post-tips{margin:24px 0;padding:22px;background:#fff0b9;border:2px solid #1e2a3a}
+.ls-rank.theme-retro #litship-linkedin-onboarding .first-post-tips h3{font:800 18px/1.8 -apple-system,BlinkMacSystemFont,'Hiragino Sans','Yu Gothic',Meiryo,sans-serif;margin:0 0 16px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .first-post-tips-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .first-post-tips strong{display:block;font-size:15px;line-height:1.8;color:#1e2a3a;margin-bottom:8px}
+.ls-rank.theme-retro #litship-linkedin-onboarding .first-post-tips p{font-size:14px;line-height:1.9;color:#4e5864;margin:0}
+@media(max-width:760px){.ls-rank.theme-retro #litship-linkedin-onboarding .first-post-tips{padding:18px}.ls-rank.theme-retro #litship-linkedin-onboarding .first-post-tips-grid{grid-template-columns:minmax(0,1fr);gap:20px}}
+
+/* One path through each lesson. Details and confirmation stay with the action. */
+.ls-rank.theme-retro .course-content{padding:38px 0 46px}
+.ls-rank.theme-retro .course-steps{list-style:none;padding:0;margin:0;max-width:880px}
+.ls-rank.theme-retro .course-steps>li{display:grid;grid-template-columns:48px minmax(0,1fr);gap:24px;padding:30px 0;border-bottom:2px dashed #c9bea6}
+.ls-rank.theme-retro .course-steps>li:first-child{padding-top:0}
+.ls-rank.theme-retro .course-steps>li>span{display:grid;place-items:center;align-self:start;background:#f3b72f;border:2px solid #1e2a3a;box-shadow:3px 3px 0 #1e2a3a;width:44px;height:44px;font-weight:850}
+.ls-rank.theme-retro .course-steps h2{font-family:inherit;font-size:22px;font-weight:800;line-height:1.7;margin:0 0 13px}
+.ls-rank.theme-retro .course-steps p{font-size:15px;color:#4e5864;line-height:2;margin:0}
+.ls-rank.theme-retro .course-opportunity{max-width:880px;border:2px solid #1e2a3a;box-shadow:5px 5px 0 #1e2a3a;padding:26px;margin:32px 6px 0 0;background:#fffefa}
+.ls-rank.theme-retro .course-opportunity .small{font-size:14px;line-height:1.9;margin:14px 0 0;color:#4e5864}
+.ls-rank.theme-retro .course-support{max-width:880px;border-left:4px solid #1e2a3a;padding:14px 20px;margin:36px 0 0;background:#faedd0}
+.ls-rank.theme-retro .course-support strong{font-size:17px}
+.ls-rank.theme-retro .course-support p{font-size:14px;line-height:1.9;color:#4e5864;margin:8px 0 0}
+.ls-rank.theme-retro .course-next{padding-top:0;padding-bottom:52px}.ls-rank.theme-retro .course-next .actions{gap:22px;margin-top:0}
+@media(max-width:760px){.ls-rank.theme-retro .course-content{padding:30px 0}.ls-rank.theme-retro .course-steps>li{grid-template-columns:33px minmax(0,1fr);gap:16px;padding:24px 0}.ls-rank.theme-retro .course-steps>li>span{width:30px;height:32px;font-size:11px}.ls-rank.theme-retro .course-steps h2{font-size:19px}.ls-rank.theme-retro .course-steps p{font-size:14px}.ls-rank.theme-retro .course-opportunity{padding:22px}.ls-rank.theme-retro .course-support{padding:14px 17px}.ls-rank.theme-retro .course-next{padding-bottom:38px}}
+
+.ls-rank.theme-retro .hints-hero .lead:empty{display:none}
+.ls-rank.theme-retro .course-content .course-steps h2{font-family:inherit}
+
+.ls-rank.theme-retro .course-routine-header{margin:0 0 28px;max-width:880px}.ls-rank.theme-retro .course-routine-header .eyebrow{margin-bottom:10px}.ls-rank.theme-retro .course-content .course-routine-header h2{font-family:inherit;font-size:28px;font-weight:850;line-height:1.7;margin:0}
+
+/* Mid-strength background, including the people on the left. */
+.ls-rank.theme-retro .brand-photo-hero{position:relative;isolation:isolate;overflow:hidden;background:#fff9e9}
+.ls-rank.theme-retro .brand-photo-hero:after{display:none}
+.ls-rank.theme-retro .hero-photo-background{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.ls-rank.theme-retro .hero-photo-background img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 23%;opacity:.34;filter:sepia(.15) saturate(.85);mask-image:linear-gradient(to right,rgba(0,0,0,.8),#000);-webkit-mask-image:linear-gradient(to right,rgba(0,0,0,.8),#000)}
+.ls-rank.theme-retro .brand-photo-hero>.wrap{position:relative;z-index:1}
+@media(max-width:760px){.ls-rank.theme-retro .hero-photo-background img{top:50%;bottom:auto;height:auto;transform:translateY(-50%);object-fit:contain;object-position:center;opacity:.25;mask-image:linear-gradient(to bottom,transparent,#000 10%,#000 80%,transparent);-webkit-mask-image:linear-gradient(to bottom,transparent,#000 10%,#000 80%,transparent)}}
+.ls-rank.theme-retro .hero-photo-background:after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 75%,#fff9e9 100%)}
+
+.ls-rank.theme-retro .home-support{padding-bottom:36px}.ls-rank.theme-retro .home-support .course-support{max-width:none;margin-top:0}
+
+/* Small physical responses for the retro-pop controls. */
+.reading-progress{position:fixed;top:0;left:0;width:100%;height:4px;background:#f3b72f;border-bottom:1px solid #1e2a3a;transform:scaleX(0);transform-origin:left;z-index:100;pointer-events:none}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+.ls-rank.theme-retro .rank-journey>.rank-card{transition:transform .2s ease,box-shadow .2s ease}
+.ls-rank.theme-retro .rank-journey>.rank-card:hover{transform:translate(-3px,-3px);box-shadow:10px 10px 0 #1e2a3a}
+.ls-rank.theme-retro .rank-card .ai-mission-number{transition:transform .25s ease}
+.ls-rank.theme-retro .rank-card:hover .ai-mission-number{transform:rotate(2deg)}
+.ls-rank.theme-retro .hint-cta>span:last-child{transition:transform .2s ease}
+.ls-rank.theme-retro .hint-cta:hover>span:last-child{transform:translate(3px,-3px)}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.gem,.member){transition:transform .2s ease,box-shadow .2s ease}
+.ls-rank.theme-retro #litship-linkedin-onboarding :is(.gem,.member):hover{transform:translateY(-4px);box-shadow:5px 7px 0 #1e2a3a}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ls-rank.theme-retro *{animation:none!important;transition:none!important}}
+
+/* Explicit parent navigation, shared placement across all learner pages. */
+.ls-rank .branding-return{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding-top:16px;padding-bottom:16px;position:relative;z-index:2}
+.ls-rank .branding-return a{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;min-height:44px;max-width:100%;padding:9px 14px;border:2px solid var(--retro-navy,#1e2a3a);border-radius:4px;background:#fff9e9;color:#1e2a3a;text-decoration:none;font:700 14px/1.5 system-ui,sans-serif;box-shadow:3px 3px 0 #1e2a3a;overflow-wrap:anywhere}
+.ls-rank .branding-return a:hover{background:#f3b72f}
+.ls-rank .branding-return a:focus-visible{outline:3px solid #1e2a3a;outline-offset:5px}
+@media(max-width:480px){.ls-rank .branding-return{gap:10px;padding-top:12px;padding-bottom:12px}.ls-rank .branding-return a{font-size:12px;padding:9px 10px}}
+@media print{.ls-rank .branding-return{display:none}}
+
+/* Real opportunities: LSCW participation story beside rank 02. */
+.ls-rank.theme-retro .brand-chance-story{grid-column:1/-1;min-width:0;margin:20px 0 36px;padding:clamp(20px,4vw,42px);border:3px solid #1e2a3a;border-radius:6px;background:#fff3cd;box-shadow:6px 6px 0 #1e2a3a;color:#1e2a3a}
+.ls-rank.theme-retro .chance-story-heading h2{font-family:system-ui,sans-serif;font-weight:900;font-size:clamp(26px,4vw,42px);line-height:1.5;margin:10px 0 16px;letter-spacing:.02em}
+.ls-rank.theme-retro .chance-story-lead{font-weight:700;font-size:17px;line-height:1.9;margin-bottom:26px}
+.ls-rank.theme-retro .chance-story-photos{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:24px 0}
+.ls-rank.theme-retro .chance-story-photos figure{min-width:0;margin:0;padding:8px;background:white;border:2px solid #1e2a3a;box-shadow:3px 3px 0 #1e2a3a;border-radius:3px}
+.ls-rank.theme-retro .chance-story-photos img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;border-radius:0}
+.ls-rank.theme-retro .chance-story-photos figcaption{font-size:12px;font-weight:700;padding:9px 3px 2px;line-height:1.6}
+.ls-rank.theme-retro .chance-event-note{padding:22px;background:#fffdf5;border:2px solid #1e2a3a;margin:24px 0}
+.ls-rank.theme-retro .chance-event-note h3{font:850 21px/1.6 system-ui,sans-serif;margin:0 0 12px}
+.ls-rank.theme-retro .brand-chance-story p{font-size:15px;line-height:1.95;overflow-wrap:anywhere}
+.ls-rank.theme-retro .chance-event-note a{display:inline-flex;align-items:center;min-height:44px;font-weight:750;color:#1e2a3a;text-decoration:underline;text-underline-offset:4px}
+.ls-rank.theme-retro .chance-invitation{padding-top:18px;border-top:1px dashed #1e2a3a;margin-top:16px}
+.ls-rank.theme-retro .chance-story-message p:last-child{margin-bottom:0}
+@media(max-width:600px){.ls-rank.theme-retro .chance-story-photos{grid-template-columns:1fr}.ls-rank.theme-retro .brand-chance-story{padding:18px;margin:14px 0 28px;box-shadow:4px 4px 0 #1e2a3a}.ls-rank.theme-retro .chance-event-note{padding:16px}.ls-rank.theme-retro .brand-chance-story p{font-size:14px}}
+
+/* Generated editorial art replaces event photography on the homepage. */
+.ls-rank.theme-retro .brand-illustration-hero .hero-photo-background img{opacity:.88;filter:none;object-position:center 63%;mask-image:none;-webkit-mask-image:none}
+.ls-rank.theme-retro .brand-illustration-hero .hero-photo-background:after{background:linear-gradient(90deg,#fff9e9 0%,rgba(255,249,233,.96) 28%,rgba(255,249,233,.65) 48%,transparent 73%),linear-gradient(0deg,#fff9e9,transparent 15%)}
+.ls-rank.theme-retro .chance-story-heading h2,.ls-rank.theme-retro .chance-event-note h3{text-wrap:balance}
+.ls-rank.theme-retro .chance-channel-link a{display:inline-flex;align-items:center;min-height:44px;font-weight:750;color:#1e2a3a;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:760px){.ls-rank.theme-retro .brand-illustration-hero .hero-photo-background img{top:0;left:0;width:100%;height:100%;transform:none;object-fit:cover;object-position:65% center;opacity:.28}.ls-rank.theme-retro .brand-illustration-hero .hero-photo-background:after{background:linear-gradient(90deg,rgba(255,249,233,.7),rgba(255,249,233,.25)),linear-gradient(0deg,#fff9e9,transparent 18%)}}
+
+/* Two approachable contacts, with explicit LinkedIn profile actions. */
+.ls-rank.theme-retro .course-support{padding:clamp(20px,3vw,32px);border:2px solid #1e2a3a;border-radius:6px;background:#fff6d9;box-shadow:4px 4px 0 #1e2a3a}
+.ls-rank.theme-retro .support-kicker{display:block;font:800 11px/1.6 system-ui,sans-serif;letter-spacing:.14em;margin-bottom:8px}
+.ls-rank.theme-retro .support-intro>strong{display:block;font:850 clamp(18px,2vw,23px)/1.6 system-ui,sans-serif}
+.ls-rank.theme-retro .support-intro>p{margin:12px 0 20px;font-size:15px;line-height:1.9}
+.ls-rank.theme-retro .support-people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.ls-rank.theme-retro .support-person{display:flex;gap:14px;align-items:center;min-width:0;min-height:88px;padding:16px;border:2px solid #1e2a3a;border-radius:4px;background:#fffdf5;color:#1e2a3a;text-decoration:none;box-shadow:3px 3px 0 #1e2a3a}
+.ls-rank.theme-retro .support-person:hover{background:#ffedb2}
+.ls-rank.theme-retro .support-person:focus-visible,.ls-rank.theme-retro .chance-youtube-link:focus-visible{outline:3px solid #1e2a3a;outline-offset:5px}
+.ls-rank.theme-retro .support-monogram{display:grid;place-items:center;flex:0 0 44px;width:44px;height:44px;background:#f3b72f;border:2px solid #1e2a3a;border-radius:50%;font:850 20px/1 system-ui,sans-serif}
+.ls-rank.theme-retro .support-person-copy{display:flex;flex-direction:column;gap:5px;min-width:0}
+.ls-rank.theme-retro .support-person-copy b{font-size:18px;line-height:1.5}
+.ls-rank.theme-retro .support-person-copy>span{font-size:12px;font-weight:750;line-height:1.7;overflow-wrap:anywhere}
+.ls-rank.theme-retro .course-support .support-message-note{margin:18px 0 0;font-size:13px;line-height:1.8}
+.ls-rank.theme-retro .chance-story-photos{grid-template-columns:1fr;max-width:780px;margin:24px auto;gap:28px}
+.ls-rank.theme-retro .chance-story-photos figcaption{padding:12px 10px 18px;font-size:18px}
+.ls-rank.theme-retro .chance-story-photos figcaption strong{display:block;margin-top:6px;font:850 clamp(18px,2vw,24px)/1.6 system-ui,sans-serif}
+.ls-rank.theme-retro .chance-guest-role{display:inline-block;padding:5px 10px;background:#f3b72f;border:2px solid #1e2a3a;font-size:13px;font-weight:800;line-height:1.7}
+.ls-rank.theme-retro .chance-youtube-link{display:flex;align-items:center;justify-content:center;min-height:48px;padding:12px;margin:12px 4px 4px;background:#1e2a3a;color:#fff9e9;text-decoration:none;font-size:14px;font-weight:750;line-height:1.7;border:2px solid #1e2a3a}
+.ls-rank.theme-retro .chance-youtube-link:hover{background:#fff3cd;color:#1e2a3a}
+@media(max-width:600px){.ls-rank.theme-retro .support-people{grid-template-columns:1fr;gap:12px}.ls-rank.theme-retro .support-person{padding:14px;gap:12px}.ls-rank.theme-retro .support-intro>p{font-size:14px}.ls-rank.theme-retro .chance-story-photos figcaption{padding:10px 4px 16px}.ls-rank.theme-retro .chance-guest-role{font-size:12px}}
+
+.ls-rank.theme-retro .support-promotion{border-top:1px dashed #1e2a3a;margin-top:20px;padding-top:18px}
+.ls-rank.theme-retro .support-promotion>strong{font:800 15px/1.8 system-ui,sans-serif}
+.ls-rank.theme-retro .support-promotion>p{font-size:13px;line-height:1.9;margin:8px 0 0}
+
+/* One application route, with human review before promotion. */
+.ls-rank.theme-retro .promotion-flow{display:flex;flex-wrap:wrap;gap:10px 24px;padding-left:22px;margin:14px 0 18px;font-size:13px;line-height:1.9;font-weight:700}
+.ls-rank.theme-retro .promotion-flow li{padding-left:2px}
+.ls-rank.theme-retro .rank-application-link{display:inline-flex;align-items:center;justify-content:center;min-height:48px;max-width:100%;box-sizing:border-box;padding:12px 20px;border:2px solid #1e2a3a;border-radius:4px;background:#f3b72f;box-shadow:3px 3px 0 #1e2a3a;color:#1e2a3a;text-decoration:none;font-size:15px;line-height:1.6;font-weight:800}
+.ls-rank.theme-retro .rank-application-link:hover{background:#ffe297}
+.ls-rank.theme-retro .rank-application-link:focus-visible{outline:3px solid #1e2a3a;outline-offset:5px}
+@media(max-width:600px){.ls-rank.theme-retro .promotion-flow{display:block}.ls-rank.theme-retro .promotion-flow li{margin:6px 0}.ls-rank.theme-retro .rank-application-link{width:100%}}

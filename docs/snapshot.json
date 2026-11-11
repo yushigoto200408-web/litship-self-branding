@@ -1,0 +1,31 @@
+{
+  "prepared_on": "2026-11-11",
+  "site_name": "Lit Ship セルフブランディング",
+  "public_url": "https://litship-branding-learning.lit-ship-5264.chatgpt.site/branding/",
+  "upstream_site_project_id": "appgprj_6ad828b7a5508191b1cd04cd9705e9e2",
+  "upstream_version_id": "appgprj_6ad828b7a5508191b1cd04cd9705e9e2~appgver_d1559f593c4881918c2fbb7e5d599d62",
+  "upstream_source_commit": "f6ed54875430cbb5e8cb646dba8c35414b70cfe1",
+  "upstream_deployment_id": "appgdep_6ae9a4fa91c48191869f521527a7fc71",
+  "application_url": "https://litship-rank-application.lit-ship-5264.chatgpt.site/apply/branding",
+  "files": {
+    "index.html": "f039dd033a111048d5520807439507579aaea7d6a2e00e974ab8798eab6937d3",
+    "404.html": "76a6a741f43afb31b33580523b8bc44b57b955d00ea407601817c736050a866c",
+    "branding/index.html": "256d97d675e94362bf4d45ed8443b5dedfadbe23a5b21bcd96019c3fbd4a1132",
+    "assets/brand-ui-base.css": "1b922c63a88142a818c2841046c41e323d515c5d3a1a528fcf21b2d184c3ca09",
+    "assets/branding-retro.css": "95fe966bde0f7b25d48f76e575350c60433d0dc2a30e6e18a0c03a5fb50a322e",
+    "assets/brand-quiz.json": "7043b805c6b327eb3247947e016e5c209c3b5eb969d7a888838fdb2d1ae7f97e",
+    "assets/brand-stages.json": "9f0614727aa71fbc731507dbd75646f11c572b6c681ff29940ae41aa5ffc686f",
+    "assets/branding.css": "50d9fe218a01a2c582f1798336795eee933870b9368a153de84d285c75ca2639",
+    "assets/branding.js": "a92b4e781defa77a86708180466136138166d1b3dac3b4e036470a0a9c8a2135",
+    "assets/branding-connections-hero.png": "a88d59c8f7e9c0ff8ec3c64a14dee105bfa5cb5d7f5fb666229de807ea1a69d9",
+    "assets/lscw-2026-autumn-01.jpg": "a9dc975d8a651a2bbde251a89d95c3cc11e01e07b79c4496ab5f2bbcdf416e34",
+    "assets/lscw-2026-autumn-02.jpg": "f2ed93d35632b30c1ea24eac998ed4aa8baa6ca81e4f976636847f1f5c5c8fed",
+    "assets/fonts/dela-gothic-one.ttf": "4504c3f71aadb676202e0e853cfa60087519cd568e1e6ec7a16457ea7527f4df",
+    "assets/fonts/OFL.txt": "c0014792d4f4abc0508c295b277f2b17ae44465c8dc88d12af9cea48279b5fda",
+    "branding/associate/index.html": "79e3d9da76928b76aae64042ba1e0978ae63594998e635fcf0722be1d3005a94",
+    "branding/professional/index.html": "b678b76c1d246c6d8040df1ff6a2a5865b8286b117f82ff2d02e1670d44c1767",
+    "branding/ambassador/index.html": "d48c0464891c8fb7163cdb380bf25dfdef23da0c622109820533a9d2c01f531f",
+    "branding/basic/index.html": "8e61d9954b41ebf66f0b389f0d75945bd3850c5c70bb49cd9b2e817933125c36",
+    "branding/expert/index.html": "3a26f3c09c9122f0cb773e2dc38f87eecd36702e1794ce788c16d8bc6497f729"
+  }
+}
